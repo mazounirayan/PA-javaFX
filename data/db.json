@@ -14,8 +14,8 @@
       "role": "staff",
       "password": "password123"
     }
-  ],
-  "sessions": [
+    ],
+    "sessions": [
     {
       "id": 1,
       "theme": "Haunted House",
@@ -40,8 +40,8 @@
       ],
       "createdBy": 2
     }
-  ],
-  "reservations": [
+    ],
+    "reservations": [
     {
       "id": 1,
       "email": "client1@example.com",
@@ -57,14 +57,20 @@
       "slot": "2024-07-06T16:00:00",
       "participants": 5,
         "status": "confirmed"
-    }  ],  
-    "contacts": [
-        {
-          "id": 1,
+    }
+    ],  
+    "contacts": [  
+         { 
+            "id": 1,
           "name": "John Doe",
-          "email": "john.doe@example.com",
-          "message": "I am interested in your escape room events."
-        }
-      ]
+           "email": "john.doe@example.com",
+           "message": "I am interested in your escape room events."
+        },{ 
+            "id": 2,
+         "name": " Doe",
+         "email": "doe@example.com",
+         "message": "your escape room events."
+      }
+    ]    
   }
   
