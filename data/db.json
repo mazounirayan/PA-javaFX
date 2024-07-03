@@ -1,0 +1,70 @@
+{
+    "employees": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "role": "admin",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "role": "staff",
+      "password": "password123"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "theme": "Haunted House",
+      "duration": 60,
+      "price": 100,
+      "minParticipants": 2,
+      "availableSlots": [
+        "2024-07-05T10:00:00",
+        "2024-07-05T12:00:00"
+      ],
+      "createdBy": 1
+    },
+    {
+      "id": 2,
+      "theme": "Mystery Mansion",
+      "duration": 90,
+      "price": 150,
+      "minParticipants": 4,
+      "availableSlots": [
+        "2024-07-06T14:00:00",
+        "2024-07-06T16:00:00"
+      ],
+      "createdBy": 2
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "email": "client1@example.com",
+      "sessionId": 1,
+      "slot": "2024-07-05T10:00:00",
+      "participants": 3,
+        "status": "confirmed"
+    },
+    {
+      "id": 2,
+      "email": "client2@example.com",
+      "sessionId": 2,
+      "slot": "2024-07-06T16:00:00",
+      "participants": 5,
+        "status": "confirmed"
+    }  ],  
+    "contacts": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "message": "I am interested in your escape room events."
+        }
+      ]
+  }
+  
