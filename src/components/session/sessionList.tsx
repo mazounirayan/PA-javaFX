@@ -16,7 +16,7 @@ const SessionList: React.FC = () => {
   const [selectedSession, setSelectedSession] = useState<Session | null>(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/sessions')
+    fetch('http://localhost:5000/sessions')
       .then(response => response.json())
       .then(data => setSessions(data));
   }, []);
@@ -24,7 +24,7 @@ const SessionList: React.FC = () => {
   const handleSave = (session: Session) => {
     if (session.id) {
       // Update existing session
-      fetch(`http://localhost:3001/sessions/${session.id}`, {
+      fetch(`http://localhost:5000/sessions/${session.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const SessionList: React.FC = () => {
       });
     } else {
       // Create new session
-      fetch('http://localhost:3001/sessions', {
+      fetch('http://localhost:5000/sessions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
