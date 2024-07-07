@@ -51,6 +51,21 @@ const SessionList: React.FC = () => {
     }
   };
 
+  const handleUpdate = (session: Session) => {
+    if(session){
+      fetch (`http://localhost:5000/sessions/${session.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(session)
+      }).then(() => {
+        setSessions(sessions.map(s => (s.id === session.id ? session : s)));
+        setSelectedSession(null);
+      });
+    }
+  };
+
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Sessions d'Escape Game</h1>
