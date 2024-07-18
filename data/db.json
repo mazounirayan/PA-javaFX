@@ -4,53 +4,95 @@
       "id": "1",
       "name": "Alice",
       "email": "alice@example.com",
-      "role": "admin",
+      "role": "staff",
       "password": "password123"
     },
     {
-      "id": "2",
-      "name": "Bob",
-      "email": "bob@example.com",
+      "id": "dcdc",
+      "name": "Mohamed TAZI",
+      "email": "t.mohamed.29102003@gmail.com",
       "role": "staff",
-      "password": "password123"
+      "password": "123456"
     }
   ],
   "sessions": [
     {
-      "id": "1",
-      "theme": "Haunted House",
-      "duration": 60,
-      "price": 100,
-      "minParticipants": 2,
+      "id": "667e",
+      "date": "2024-07-14T15:16:14.361Z",
+      "duration": "60",
+      "price": 400,
+      "minParticipants": "6",
       "availableSlots": [
-        "2024-07-05T10:00:00",
-        "2024-07-05T12:00:00"
+        {
+          "time": "17:16",
+          "maxParticipants": 10,
+          "remainingPlaces": 2
+        },
+        {
+          "time": "18:16",
+          "maxParticipants": 10,
+          "remainingPlaces": 10
+        },
+        {
+          "time": "12:12",
+          "maxParticipants": 8,
+          "remainingPlaces": 5
+        }
       ],
-      "createdBy": 1
+      "createdBy": 0,
+      "theme": "1"
     },
     {
-      "id": "2",
-      "theme": "Mystery Mansion",
-      "duration": 90,
-      "price": 150,
-      "minParticipants": 4,
+      "id": "668f",
+      "date": "2024-07-15T14:00:00.000Z",
+      "duration": "90",
+      "price": 450,
+      "minParticipants": "4",
       "availableSlots": [
-        "2024-07-06T14:00:00",
-        "2024-07-06T16:00:00"
+        {
+          "time": "14:00",
+          "maxParticipants": 8,
+          "remainingPlaces": 8
+        },
+        {
+          "time": "16:00",
+          "maxParticipants": 8,
+          "remainingPlaces": 6
+        },
+        {
+          "time": "18:00",
+          "maxParticipants": 8,
+          "remainingPlaces": 8
+        }
       ],
-      "createdBy": 2
+      "createdBy": 0,
+      "theme": "2"
     },
     {
-      "id": "9181",
-      "theme": "ethwdghsf",
-      "duration": "2",
-      "price": "231",
-      "minParticipants": "32",
+      "id": "669g",
+      "date": "2024-07-16T10:00:00.000Z",
+      "duration": "120",
+      "price": 500,
+      "minParticipants": "6",
       "availableSlots": [
-        "12/03/2012",
-        ""
+        {
+          "time": "10:00",
+          "maxParticipants": 12,
+          "remainingPlaces": 12
+        },
+        {
+          "time": "13:00",
+          "maxParticipants": 12,
+          "remainingPlaces": 9
+        },
+        {
+          "time": "16:00",
+          "maxParticipants": 12,
+          "remainingPlaces": 12
+        }
       ],
-      "createdBy": 0
+      "createdBy": 0,
+      "theme": "3"
     }
   ],
   "reservations": [
@@ -63,45 +105,65 @@
       "status": "confirmed"
     },
     {
-      "id": "2",
-      "email": "client2@example.com",
-      "sessionId": 2,
-      "slot": "2024-07-06T16:00:00",
-      "participants": 5,
-      "status": "confirmed"
+      "id": "c58b",
+      "firstName": "Mohamed",
+      "lastName": "Tazi",
+      "email": "t.mohamed.29102003@gmail.com",
+      "selectedRoom": "1",
+      "slot": "2024-07-14T15:16:00.000Z"
     },
     {
-      "id": "9f2c",
+      "id": "10ac",
+      "firstName": "MOHAMED RAYAN",
+      "lastName": "MAZOUNI",
+      "email": "mazounirayan@gmail.com",
+      "selectedRoom": "1",
+      "slot": "2024-07-15T15:16:00.000Z"
+    },
+    {
+      "id": "c3d7",
       "firstName": "rayan",
-      "lastName": "mazouni",
+      "lastName": "mazou",
+      "email": "mazouni@gmail.com",
+      "numberOfPeople": 6,
+      "selectedRoom": "1",
+      "slot": "2024-07-14T16:16:00.000Z"
+    },
+    {
+      "id": "8610",
+      "firstName": "MOHAMED RAYAN",
+      "lastName": "MAZOUNI",
+      "email": "mazouni@gmail.com",
+      "numberOfPeople": 8,
+      "selectedRoom": "1",
+      "slot": "2024-07-14T15:16:00.000Z"
+    },
+    {
+      "id": "1713",
+      "firstName": "MOHAMED RAYAN",
+      "lastName": "MAZOUNI",
+      "email": "g@g.com",
+      "numberOfPeople": 6,
+      "selectedRoom": "1",
+      "slot": "2024-07-14T15:16:00.000Z"
+    },
+    {
+      "id": "6c8b",
+      "firstName": "MOHAMED RAYAN",
+      "lastName": "MAZOUNI",
       "email": "a@a.com",
-      "selectedDate": "2024-07-04T22:00:00.000Z",
-      "selectedRoom": "Haunted House"
+      "numberOfPeople": 4,
+      "selectedRoom": "2",
+      "slot": "2024-07-15T12:00:00.000Z"
     },
     {
-      "id": "a0a4",
-      "firstName": "rayan",
-      "lastName": "mazouni",
-      "email": "mazo@gmail.DOM",
-      "selectedDate": "2024-07-04T22:00:00.000Z",
-      "selectedRoom": "Haunted House"
-    },
-    {
-      "id": "c6ee",
-      "firstName": "rayan",
-      "lastName": "mazouni",
-      "email": "a@a.com",
-      "selectedDate": "2024-07-04T22:00:00.000Z",
-      "selectedRoom": "Haunted House",
-      "selectedTimeSlot": "10:00"
-    },
-    {
-      "id": "6e25",
-      "firstName": "rayan",
-      "lastName": "mazouni",
-      "email": "a@a.com",
-      "selectedRoom": "Haunted House",
-      "datetime": "2024-07-05T08:00:00.000Z"
+      "id": "2561",
+      "firstName": "MOHAMED RAYAN",
+      "lastName": "MAZOUNI",
+      "email": "a@m.Com",
+      "numberOfPeople": 4,
+      "selectedRoom": "2",
+      "slot": "2024-07-15T16:00:00.000Z"
     }
   ],
   "contacts": [
@@ -112,52 +174,45 @@
       "message": "I am interested in your escape room events."
     },
     {
-      "id": "2",
-      "name": " Doe",
-      "email": "doe@example.com",
-      "message": "your escape room events."
+      "id": "33c5",
+      "name": "TAZI Mohamed ",
+      "email": "t.mohamed.29102003@gmail.com",
+      "message": "fsdfsf"
     },
     {
-      "id": "9329",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "message": "I am interested in your escape room events."
-    },
-    {
-      "id": "cfcf",
-      "name": "aaa",
+      "id": "be4b",
+      "name": "c",
       "email": "a@a.com",
-      "message": "kzoksgfpojksgf"
-    },
-    {
-      "id": "95a1",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "message": "I am interested in your escape room events."
-    },
-    {
-      "id": "20c0",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "message": "I am interested in your escape room events."
-    },
-    {
-      "id": "76fc",
-      "name": "xcvxc",
-      "email": "xcvxv@xcv.com",
-      "message": "vxvcx"
-    },
-    {
-      "id": "587f",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "message": "I am interested in your escape room events."
-    },
-    {
-      "id": "9af6",
-      "name": "nnnnnn",
-      "email": "nn@hh",
       "message": ""
+    },
+    {
+      "id": "b6ae",
+      "name": "ggg",
+      "email": "hfchg@gg.com",
+      "message": "ggg"
+    }
+  ],
+  "themes": [
+    {
+      "id": "1",
+      "name": "Asile",
+      "salle": "1",
+      "histoire": "un theme comme les autre ",
+      "photo": "logo.png"
+    },
+    {
+      "id": "2",
+      "name": "Crypte",
+      "salle": "2",
+      "histoire": "un theme comme les autre ",
+      "photo": "logo.png"
+    },
+    {
+      "id": "3",
+      "name": "Laboratoire",
+      "salle": "3",
+      "histoire": "un theme comme les autre ",
+      "photo": "logo.png"
     }
   ]
 }
