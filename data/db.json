@@ -1,7 +1,7 @@
 {
   "employees": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Alice",
       "email": "alice@example.com",
       "role": "staff",
@@ -97,7 +97,7 @@
   ],
   "reservations": [
     {
-      "id": "1",
+      "id": 1,
       "email": "client1@example.com",
       "sessionId": 1,
       "slot": "2024-07-05T10:00:00",
@@ -168,10 +168,19 @@
   ],
   "contacts": [
     {
-      "id": "1",
+      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "message": "I am interested in your escape room events."
+    }
+  ],
+  "themes": [
+    {
+      "id": "1",
+      "name": "theme1",
+      "salle": "1",
+      "histoire": "un theme comme les autre ",
+      "photo": "logo.png"
     },
     {
       "id": "33c5",

@@ -39,78 +39,60 @@ const ThemedApp: React.FC = () => {
         <Route
           index
           element={
-            <ProtectedRoute
-              element={
-                <>
-                  <PageTitle title="Dashboard" />
-                  <Dashboard />
-                </>
-              }
-            />
+            <>
+              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <ECommerce />
+            </>
           }
         />
+     
         <Route
-          path="/signin"
+          path="/settings"
           element={
             <>
-              <PageTitle title="Sign In" />
+              <PageTitle title="Profile | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <Settings />
+            </>
+          }
+        />
+   
+        <Route
+          path="/forms/form-layout"
+          element={
+            <>
+              <PageTitle title="Form Layout | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <FormLayout />
+            </>
+          }
+        />
+
+   
+        <Route
+          path="/auth/signin"
+          element={
+            <>
+              <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <SignIn />
             </>
           }
         />
         <Route
-          path="/sessions"
+          path="/auth/signup"
           element={
-            <ProtectedRoute
-              element={
-                <>
-                  <PageTitle title="Sessions d'Escape Game" />
-                  <SessionList />
-                </>
-              }
-            />
+            <>
+              <PageTitle title="Signup | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <SignUp />
+            </>
           }
         />
-        <Route
-          path="/create-session"
+             <Route
+          path="/apiTest"
           element={
-            <ProtectedRoute
-              element={
-                <>
-                  <PageTitle title="Créer une nouvelle session" />
-                  <CreateSession />
-                </>
-              }
-            />
+            <>
+             < EmployeeComponent/>
+            </>
           }
         />
-        <Route
-          path="/employeeForm"
-          element={
-            <ProtectedRoute
-              element={
-                <>
-                  <PageTitle title="Profile" />
-                  <EmployeeForm />
-                </>
-              }
-            />
-          }
-        />
-        <Route
-          path="/themeCreation"
-          element={
-            <ProtectedRoute
-              element={
-                <>
-                  <PageTitle title="Theme creation" />
-                  <CreateTheme />
-                </>
-              }
-            />
-          }
-        />
-        <Route path="*" element={<Navigate to="/signin" replace />} />
       </Routes>
     </DefaultLayout>
   );
